@@ -4,11 +4,7 @@
     "description": "Intelligent DJ automation with beatmatching, smart queues, and AI-driven music curation",
     "version": "0.1.0",
     "commands": [
-        "dj",
-        "dj:mode",
-        "dj:analyze",
-        "dj:queue",
-        "dj:session"
+        "dj"
     ],
     "min_conduit_version": "2.0.0",
     "dependencies": [],

@@ -6,10 +6,6 @@ namespace JordanPartridge\ConduitDj;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use JordanPartridge\ConduitDj\Commands\DjCommand;
-use JordanPartridge\ConduitDj\Commands\DjModeCommand;
-use JordanPartridge\ConduitDj\Commands\DjAnalyzeCommand;
-use JordanPartridge\ConduitDj\Commands\DjQueueCommand;
-use JordanPartridge\ConduitDj\Commands\DjSessionCommand;
 use JordanPartridge\ConduitDj\Services\DjIntelligenceService;
 use JordanPartridge\ConduitDj\Services\BeatMatchingService;
 use JordanPartridge\ConduitDj\Services\QueueBuilderService;
@@ -45,10 +41,6 @@ class ServiceProvider extends BaseServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 DjCommand::class,
-                DjModeCommand::class,
-                DjAnalyzeCommand::class,
-                DjQueueCommand::class,
-                DjSessionCommand::class,
             ]);
         }
         
