@@ -1,10 +1,14 @@
 {
     "namespace": "dj",
-    "name": "Dj",
-    "description": "A Conduit component for dj functionality",
+    "name": "DJ Automation",
+    "description": "Intelligent DJ automation with beatmatching, smart queues, and AI-driven music curation",
     "version": "1.0.0",
     "commands": [
-        "init"
+        "dj",
+        "dj:mode",
+        "dj:analyze",
+        "dj:queue",
+        "dj:session"
     ],
     "min_conduit_version": "2.0.0",
     "dependencies": [],
@@ -14,7 +18,7 @@
     ],
     "author": {
         "name": "Jordan Partridge",
-        "email": "jordan@pstrax.com"
+        "email": "jordan@partridge.rocks"
     },
     "homepage": "https://github.com/jordanpartridge/conduit-dj",
     "repository": "https://github.com/jordanpartridge/conduit-dj",

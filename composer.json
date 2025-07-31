@@ -1,25 +1,35 @@
 {
     "name": "jordanpartridge/conduit-dj",
-    "description": "A Conduit component for dj functionality",
+    "description": "Intelligent DJ automation for Conduit - beatmatching, smart queues, and AI-driven music curation",
     "type": "library",
     "keywords": [
         "conduit",
         "laravel",
         "cli",
         "component",
-        "conduit-component"
+        "conduit-component",
+        "dj",
+        "music",
+        "spotify",
+        "automation",
+        "beatmatching"
     ],
     "license": "MIT",
     "authors": [
         {
             "name": "Jordan Partridge",
-            "email": "jordan@pstrax.com"
+            "email": "jordan@partridge.rocks"
         }
     ],
     "require": {
         "php": "^8.2",
         "laravel-zero/framework": "^11.0",
-        "illuminate/console": "^11.0"
+        "illuminate/console": "^11.0",
+        "illuminate/events": "^11.0",
+        "symfony/process": "^6.0|^7.0",
+        "jordanpartridge/conduit-spotify": "dev-feature/comprehensive-event-dispatching",
+        "jordanpartridge/conduit-knowledge": "*",
+        "echolabs/prism": "^0.9"
     },
     "require-dev": {
         "laravel/pint": "^1.18",
@@ -49,6 +59,6 @@
             ]
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
