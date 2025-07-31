@@ -2,19 +2,23 @@
 
 namespace JordanPartridge\ConduitDj\Services;
 
-use EchoLabs\Prism\Prism;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 
 class MoodAnalysisService
 {
-    protected Prism $prism;
+    protected $prism = null;
 
     public function __construct()
     {
-        $this->prism = Prism::text()
-            ->using(config('dj.ai.provider', 'openai'), config('dj.ai.model', 'gpt-4'))
-            ->withSystemPrompt(config('dj.ai.recommendation_prompt', 'You are an expert DJ analyzing music for smooth transitions and mood compatibility.'));
+        // Only initialize Prism if it's available
+        if (class_exists('EchoLabs\Prism\Prism')) {
+            $this->prism = \EchoLabs\Prism\Prism::text()
+                ->using(config('dj.ai.provider', 'openai'), config('dj.ai.model', 'gpt-4'))
+                ->withSystemPrompt(config('dj.ai.recommendation_prompt', 'You are an expert DJ analyzing music for smooth transitions and mood compatibility.'));
+        } else {
+            Log::warning('Laravel Prism not available - AI features will use fallback mode');
+        }
     }
 
     /**
