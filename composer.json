@@ -27,7 +27,7 @@
         "illuminate/console": "^11.0",
         "illuminate/events": "^11.0",
         "symfony/process": "^6.0|^7.0",
-        "jordanpartridge/conduit-spotify": "dev-feature/comprehensive-event-dispatching",
+        "jordanpartridge/conduit-spotify": "dev-master",
         "jordanpartridge/conduit-knowledge": "*",
         "echolabsdev/prism": "*"
     },
