@@ -2,7 +2,7 @@
     "namespace": "dj",
     "name": "DJ Automation",
     "description": "Intelligent DJ automation with beatmatching, smart queues, and AI-driven music curation",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "commands": [
         "dj",
         "dj:mode",
