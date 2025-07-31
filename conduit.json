@@ -1,0 +1,22 @@
+{
+    "namespace": "dj",
+    "name": "Dj",
+    "description": "A Conduit component for dj functionality",
+    "version": "1.0.0",
+    "commands": [
+        "init"
+    ],
+    "min_conduit_version": "2.0.0",
+    "dependencies": [],
+    "tags": [
+        "conduit",
+        "cli"
+    ],
+    "author": {
+        "name": "Jordan Partridge",
+        "email": "jordan@pstrax.com"
+    },
+    "homepage": "https://github.com/jordanpartridge/conduit-dj",
+    "repository": "https://github.com/jordanpartridge/conduit-dj",
+    "license": "MIT"
+}
